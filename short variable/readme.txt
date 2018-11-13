@@ -1,0 +1,2 @@
+- cac bien nam ngoai ham thi luon duoc khai bao bang tu khoa var, func
+- cac bien nam trong ham co the duoc khai bao ngan gon bang phep dung :=
