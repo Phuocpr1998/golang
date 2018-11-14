@@ -74,13 +74,16 @@ func main() {
 	startTime := time.Now()
 	noOfJobs := 100
 
+	// create Job
 	go allocate(noOfJobs)
 	done := make(chan bool)
 	go result(done)
 
+	// worker work
 	noOfWorkes := 10
 	createWorkerPool(noOfWorkes)
 	<-done
+
 	endTime := time.Now()
 	diff := endTime.Sub(startTime)
 
